@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                       %
+%              A template file for usage with ustthesis.cls             %
+%                                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{ustthesis}
+
+\usepackage{amsmath, amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{color,graphicx}
+\usepackage{siunitx}
+\usepackage{soul}
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{subcaption}
+% \newtheorem{proof}{Proof}
+\usepackage{bookmark}
+\usepackage{hyperref} % for better viewing experience  -- added by alan
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{nth}
+\usepackage{indentfirst}
+\usepackage{siunitx}
+\usepackage{changepage}
+\usepackage[a4paper, margin=1in]{geometry} % page requriement from the university ---added by Lei.
+\usepackage{setspace}
+
+\singlespacing
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% PQE Report title
+\title{Vision-Based Localization and Map Update for Long-Term Navigation in Changing Environments}  % Title of the thesis.
+% Author of the report
+\author{Jingwen~YU}    
+% Department to which the thesis
+\department{Electronic and Computer Engineering} 
+% Supervisor.
+\advisor{~Prof.~Ming~LIU}     
+% NOTE Jingwen: Uncomment/comment this line if you have/don't have a co-supervisor/co-advisor
+% Co-Supervisor.
+\coadvisor{~Prof.~Hong~Zhang}     
+% Set figure root path
+\graphicspath{{./figure/pqe}}
+\begin{document}
+
+% abstract of the report, which also contains the title and authors
+\input{chapter/abstract}
+% chapter 1, introduction with background, related work 
+\input{chapter/introduction.tex}
+% chapter 2, proposed direction
+\input{chapter/proposed_dir.tex}
+% chapter 3, preliminary works
+\input{chapter/preliminary_work.tex}
+% appendix of figures
+\input{chapter/listoffigures.tex}
+% BIBLIOGRAPHY
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
